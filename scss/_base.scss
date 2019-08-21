@@ -1,0 +1,92 @@
+.wrapper {
+  margin: auto;
+  color: $main-color;
+
+  .icon {
+    width: 16px;
+  }
+
+  .btn {
+    outline: none;
+  }
+
+  .link {
+    text-decoration: none;
+    color: $main-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+:root {
+  font-family: $main-font;
+  font-size: 10px;
+  letter-spacing: 0.3px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.marging-container {
+  margin: 0 $margin-sides;
+}
+
+.blue {
+  color: $bluetext-color;
+}
+
+
+.wellcome-component {
+  background-color: $bgcolor-welcome;
+  align-self: center;
+
+  &-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &-msg {
+      font-size: 6px;
+      margin-right: 50px;
+    }
+
+    .close-btn {
+      width: 9px;
+    }
+  }
+}
+
+.main-component {
+  margin: 0;
+}
+
+.header-logocontainer {
+  @include flex-space-between;
+  height: 60px;
+
+  &-currency {
+    display: inline;
+  }
+}
+
+.burger-container-line {
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+  border-radius: 2px;
+}
+
+.header-navcontainer {
+  .marging-container {
+    @include flex-space-between;
+
+    .header-navcontainer-nav {
+      width: 65%;
+      @include list-item-style(-list, -item, -link);
+    }
+  }
+}

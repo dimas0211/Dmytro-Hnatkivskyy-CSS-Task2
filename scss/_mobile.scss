@@ -1,0 +1,260 @@
+@media (max-width: 719px) {
+  .part-for-720 {
+    display: none;
+  }
+}
+
+.marging-container {
+  margin: 0 $margin-sides-mobile;
+}
+
+.small-align-margin {
+  margin: .5rem 0;
+}
+
+.bigger-align-margin {
+  margin: 1rem 0;
+}
+
+.border-top-bottom {
+  border-top: .5px solid $light-font-color;
+  border-bottom: .5px solid $light-font-color;
+}
+
+.border-top {
+  border-top: .5px solid $light-font-color;
+}
+
+.header-logocontainer {
+  @include flex-space-between;
+  height: 60px;
+
+  &-currency {
+    display: inline-block;
+  }
+
+  &-logo {
+    .main-logo {
+      width: 8rem;
+    }
+  }
+}
+
+#cart-btn {
+  font-family: $main-font;
+  font-size: .7rem;
+  text-transform: uppercase;
+  padding: .5rem 1rem;
+  border: 1px solid $golden-color;
+  outline: none;
+}
+
+.burger-container-line {
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+  border-radius: 2px;
+}
+
+.header-navcontainer-bottom {
+  @include flex-space-around;
+
+  &-nav {
+    width: 100%;
+    @include list-item-style(-list, -item, -link);
+  }
+}
+
+.header-navcontainer {
+  &-icons {
+    .icon {
+      padding: 1rem;
+    }
+
+    .border-item {
+      border-right: 1px dotted #cccccc;
+    }
+  }
+}
+
+.main-img-sect {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+
+  .big-img {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .prod-img {
+    width: 20%;
+    margin: auto;
+  }
+}
+
+.main-aside {
+  margin: 3rem 0;
+
+  &-name-part {
+    &-container {
+      @include flex-space-between;
+    }
+
+    .blue {
+      color: $bluetext-color;
+    }
+
+    .reviews {
+      color: $light-font-color;
+    }
+
+    .add-review {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}
+
+.main-aside {
+  &-availability-part {
+    &-available,
+    &-code,
+    &-tags {
+      .blue {
+        color: $bluetext-color;
+      }
+    }
+  }
+  
+  &-info-part {
+    color: $light-font-color;
+  
+    &-list {
+      padding: 0 1.5rem;
+    }
+  }
+
+  &-adding-part {
+    @include flex-space-between;
+  
+    &-black-btn {
+      color: $white;
+      background-color: $main-color;
+    }
+  
+    &-white-btn {
+      background-color: $white;
+  
+      &-like {
+        width: .6rem;
+      }
+    }
+  
+    .btn {
+      font-family: $main-font;
+      font-size: .7rem;
+      text-transform: uppercase;
+      padding: 1.5rem 2.5rem;
+      width: 45%;
+    }
+  }
+
+  &-param-part {
+    @include flex-space-around;
+  
+    .parameter-dropdown {
+      @include flex-space-between;
+      font-size: 1.2rem;
+      height: 3.5rem;
+      width: 80px;
+      border: 1px solid $light-font-color;
+      padding: 5px;
+    }
+  
+    .parameter-inline {
+      @include flex-space-between;
+  
+      .two-arrow-inline {
+        margin: 0 -12px 0 0;
+      }
+  
+      .two-dropdown {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  &-socialm-part {
+    @include flex-space-between;
+    height: 3rem;
+    width: 100%;
+  
+    .social-btn {
+      @include flex-space-between;
+      font-size: .7rem;
+      border-radius: 2px;
+      padding: 1px;
+      color: $light-font-color;
+      margin: 1px;
+  
+      &-logo {
+        width: .7rem;
+        padding: 0 2px 0 0;
+      }
+    }
+  
+    .likes-cloud {
+      height: 1.5rem;
+      margin-right: -2rem
+    }
+  
+    .likes-number {
+      font-size: .7rem;
+    }
+  
+    &-facebook-container {
+      @include flex-space-between;
+  
+      .fb-btn {
+        background-color: $facebook-color;
+        color: $white;
+        border: 1px solid $facebook-color;
+      }
+    }
+  
+    &-tweeter-container {
+      @include flex-space-between;
+  
+      .likes-cloud {
+        margin-right: -1rem;
+      }
+    }
+  
+    &-pinit-container {
+      @include flex-space-between;
+  
+      .likes-cloud {
+        margin-right: -2rem;
+      }
+  
+      .social-btn-logo {
+        width: 2rem;
+        padding: 1px;
+      }
+    }
+  }
+}
+
+
+.footer {
+  @include flex-center;
+  height: 2rem;
+
+  &-text {
+    color: $light-font-color;
+    font-size: .7rem;
+  }
+}

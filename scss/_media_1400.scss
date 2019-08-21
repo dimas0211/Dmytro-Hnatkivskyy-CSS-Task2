@@ -1,0 +1,87 @@
+@media (min-width: 1400px) {
+  .marging-container {
+    margin: 0 $margin-sides-for-1300;
+  }
+
+  .bigger-align-margin {
+    margin: 2rem 0;
+  }
+
+  .wellcome-component {
+    &-container {
+      &-msg {
+        margin-right: 250px;
+      }
+
+    }
+  }
+
+  .header-logocontainer {
+    &-logo {
+      .main-logo {
+        width: 12rem;
+      }
+    }
+  }
+
+  #cart-btn {
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .header-navcontainer-nav-list {
+    .link {
+      text-transform: uppercase;
+      display: block;
+      margin: auto;
+      font-size: 1.5rem;
+    }
+  }
+
+  .main-aside {
+    font-size: 1.5rem;
+  }
+
+  .main-aside-socialm-part {
+    .social-btn {
+      font-size: 1.2rem;
+
+      &-logo {
+        width: 1.2rem;
+      }
+    }
+
+    .likes-cloud {
+      height: 2rem;
+      margin-right: -3rem
+    }
+
+    .likes-number {
+      font-size: 1.2rem;
+    }
+
+    &-tweeter-container {
+      .likes-cloud {
+        margin-right: -1.8rem;
+      }
+    }
+
+    &-pinit-container {
+      .likes-cloud {
+        margin-right: -3rem;
+      }
+
+      .social-btn-logo {
+        width: 3rem;
+      }
+    }
+  }
+
+  .footer {
+    height: 3rem;
+
+    &-text {
+      font-size: 1.5rem;
+    }
+  }
+}

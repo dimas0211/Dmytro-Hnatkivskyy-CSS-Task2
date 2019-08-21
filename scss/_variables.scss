@@ -1,0 +1,64 @@
+$main-font: 'Lato',
+sans-serif;
+$margin-sides-for-1300: 300px;
+$margin-sides-wide: 200px;
+$margin-sides: 70px;
+$margin-sides-mobile: 20px;
+$main-color: #111111;
+$bgcolor-welcome: #c7cdcf;
+$golden-color: #ded3aa;
+$bluetext-color: #68899a;
+$light-font-color: #b0b3b8;
+$white: #ffff;
+$facebook-color: #3a53a3;
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin align-margin-for-conts {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@mixin list-item-style($class1, $class2, $class3) {
+  &#{$class1} {
+    @include flex-center;
+    padding: 0;
+
+    &#{$class2} {
+      display: inline;
+      list-style-type: none;
+      margin: auto;
+
+      &#{$class3} {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

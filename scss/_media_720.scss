@@ -1,0 +1,75 @@
+@media (min-width: 720px) {
+  .marging-container {
+    margin: 0 $margin-sides;
+  }
+
+  .part-for-320 {
+    display: none;
+  }
+
+  .wellcome-component {
+    &-container {
+      &-msg {
+        margin-right: 180px;
+      }
+
+    }
+  }
+
+  .header-logocontainer {
+    &-logo {
+      .main-logo {
+        width: 10rem;
+      }
+    }
+  }
+
+  #cart-btn {
+    font-size: 1rem;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-between;
+
+    &-img-sect {
+      width: 50%;
+    }
+
+    &-aside {
+      width: 47%;
+
+      &-param-part {
+        @include flex-space-around;
+      }
+    }
+  }
+
+  .parameter {
+    &-name {
+      font-size: 1.2rem;
+    }
+
+    &-dropdown {
+      @include flex-space-between;
+      font-size: 1rem;
+      height: 3rem;
+      width: 70px;
+      padding: 4px;
+    }
+
+    &-inline {
+      @include flex-space-between;
+
+      .two-arrow-inline {
+        margin: 0 -12px 0 0;
+        width: 70px;
+      }
+
+      .two-dropdown {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
